@@ -1,12 +1,5 @@
-body{
-    background-color: dimgray;
-    margin: 0;
-}
-
-
-
 nav {
-    background-color: dimgray;
+    background-color: #1e1f22;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +9,10 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 10px;
+    margin-top: 10px;
     padding: 30px;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav li {
@@ -28,41 +21,74 @@ nav li {
 
 nav li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav li a:hover {
-    text-decoration: aqua;
-}
+/*---------Header---------*/
 
 #header {
     width: 100%;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
 }
 
 .header-text {
     margin-top: 6%;
     padding-left: 5%;
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .header-text h1 {
-    font-size: 35px;
-    color: black;
+    font-size: 45px;
+    color: white;
     margin-bottom: 0.3em;
 }
 
 .header-text h1 span {
 
-    color: darkturquoise;
+    color: #48EDDD;
 }
 
-p{
+.lk-monogram-picture {
+    margin-left: 35px;
+}
+
+.job-title{
 margin-top: 0;
 }
+
+/*---------Sections-General---------*/
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.section-title{
+    margin-left: 20%;
+    font-size: 2.5rem;
+    color: #48EDDD;
+}
+
+/*---------About-Section---------*/
+#about{
+    background-color: #2b2d30
+}
+
+.aboutMeText{
+    color: white;
+    margin-left: 20%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*---------Portfolio-Section---------*/
+#portfolio{
+    background-color: #2b2d30
+}
+
