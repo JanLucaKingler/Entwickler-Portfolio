@@ -1,0 +1,13 @@
+body {
+    background-color: #1e1f22;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    justify-content: flex-end;
+    background-color: #2b2d30;
+    height: 200px;
+    text-align: center;
+}
+
+
