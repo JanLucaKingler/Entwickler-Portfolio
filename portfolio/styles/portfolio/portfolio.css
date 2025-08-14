@@ -1,8 +1,8 @@
 /*---------Portfolio-Section---------*/
 #portfolio{
     background-color: var(--secondColor);
+    height: 70vh;
 }
-
 .portfolio-introduction{
     color: var(--whiteColor);
     font-size: 18px;
@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-
 }
 
 .container .card{
