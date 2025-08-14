@@ -14,7 +14,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-left: 23%;
+    margin: 0 auto;
+
 }
 
 .container .card{
@@ -109,7 +110,7 @@
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    margin-left: 42.5%;
+    margin: 0 auto;
 }
 
 .icon {
