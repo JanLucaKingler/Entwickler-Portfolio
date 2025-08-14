@@ -1,0 +1,44 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-level {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.stars {
+    display: flex;
+    gap: 0.1rem;
+}
+
+.star {
+    color: var(--eyeCatchColor);
+    font-size: 1rem;
+}
