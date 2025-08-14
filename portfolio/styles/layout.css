@@ -70,25 +70,30 @@ section {
 }
 
 .section-title{
-    margin-left: 20%;
+    margin-top: 0;
+    text-align: center;
     font-size: 2.5rem;
-    color: #48EDDD;
+    color: var(--eyeCatchColor);
 }
-
-/*---------About-Section---------*/
-#about{
-    background-color: #2b2d30
-}
-
-.aboutMeText{
+.section-overtitle{
+    text-align: center;
     color: white;
-    margin-left: 20%;
-    font-size: 18px;
-    text-align: justify;
+    margin-bottom: 0;
 }
 
-/*---------Portfolio-Section---------*/
-#portfolio{
-    background-color: #2b2d30
+/*---------Body---------*/
+
+body {
+    background-color: #1e1f22;
+    margin: 0;
+    padding: 0;
 }
 
+/*---------Footer---------*/
+
+footer{
+    justify-content: flex-end;
+    background-color: #2b2d30;
+    height: 200px;
+    text-align: center;
+}

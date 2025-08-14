@@ -1,0 +1,10 @@
+/*---------About-Section---------*/
+#about{
+    background-color: #2b2d30
+}
+.aboutMeText{
+    color: white;
+    margin-left: 20%;
+    font-size: 18px;
+    text-align: justify;
+}
