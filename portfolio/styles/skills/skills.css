@@ -1,44 +1,45 @@
-.skills-container {
+.container {
+    margin: 0 auto;
+    width: 75%;
+    color: var(--whiteColor);
+}
+
+.experience-container {
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.experience__container>div {
+    background: transparent;
+    padding: 2.4rem 5rem;
+}
+
+.experience-content {
+    grid-row-gap: 2rem;
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience-details {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
-    font-family: Arial, sans-serif;
-    color: white;
+    gap: 1rem;
 }
 
-.skills-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
-.skill-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.skill-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-}
-
-.skill-name {
-    font-weight: bold;
-}
-
-.skill-level {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-.stars {
-    display: flex;
-    gap: 0.1rem;
+.experience-details-icon {
+    height: 2rem;
+    margin-top: 4px;
+    width: 2rem;
 }
 
 .star {
     color: var(--eyeCatchColor);
-    font-size: 1rem;
 }
