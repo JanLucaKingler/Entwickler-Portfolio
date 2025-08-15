@@ -16,17 +16,23 @@
     padding: 2.4rem 5rem;
 }
 
+.experience-code,
+.experience-tools {
+    text-align: center;
+}
+
 .experience-content {
-    grid-row-gap: 2rem;
-    display: grid
-;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    grid-row-gap: 3rem;
+    margin-top: 1.5rem;
+    gap: 3rem;
 }
 
 .experience-details {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 div {
@@ -35,9 +41,9 @@ div {
 }
 
 .experience-details-icon {
-    height: 2rem;
+    height: 3rem;
     margin-top: 4px;
-    width: 2rem;
+    width: 3rem;
 }
 
 .star {
