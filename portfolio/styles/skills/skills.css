@@ -1,3 +1,7 @@
+#skills{
+    background-color: var(--firstColor);
+    height: 70vh;
+}
 .container {
     margin: 0 auto;
     width: 75%;
