@@ -1,8 +1,7 @@
 #contact {
-    text-align: center;
-    padding: 40px 20px;
     background-color: var(--firstColor);
     height: 40vh;
+    color: white;
 }
 
 .section-title {
@@ -12,48 +11,20 @@
     margin-bottom: 20px;
 }
 
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    font-size: 20px;
-    color: var(--whiteColor);
-    background: rgba(255,255,255,0.05); /* leicht durchsichtiger Block */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    max-width: 400px;
-    margin: 0 auto;
+.left-contact-side{
+    flex-basis: 35%;
 }
 
-.contact-section p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Abstand zwischen Icon und Text */
-    margin: 0;
+.left-contact-side p{
+    margin-top: 30px;
 }
 
-.contact-section p i {
+.left-contact-side p i{
     color: var(--eyeCatchColor);
-    font-size: 25px;
 }
 
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.right-contact-side{
+    flex-basis: 60%;
 }
 
-.social-icons a {
-    color: var(--eyeCatchColor);
-    font-size: 28px;
-    transition: transform 0.2s, color 0.2s;
-}
 
-.social-icons a:hover {
-    transform: scale(1.2);
-    color: var(--whiteColor);
-}

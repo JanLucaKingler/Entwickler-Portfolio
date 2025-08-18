@@ -64,6 +64,10 @@ margin-top: 0;
 
 /*---------Sections-General---------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     height: 100vh;
     scroll-snap-align: start;
@@ -78,7 +82,7 @@ section {
 /*---------Body---------*/
 
 body {
-    background-color: #1e1f22;
+    background-color: var(--firstColor);
     margin: 0;
     padding: 0;
 }
@@ -86,9 +90,30 @@ body {
 /*---------Footer---------*/
 
 footer {
-    display: flex;
-    justify-items: center;
-    background-color: #222;
+    text-align: center;
+    background-color: var(--secondColor);
     height: 30vh;
-    color: white;
+    color: var(--whiteColor);
 }
+footer p {
+    margin-top: 40px;
+}
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;             /* macht die <li> nebeneinander */
+    gap: 20px;                 /* Abstand zwischen den Links */
+    justify-content: center;   /* zentriert den Inhalt (optional) */
+}
+
+.footer-nav li a {
+    text-decoration: none;     /* entfernt Unterstreichung */
+    color: inherit;            /* übernimmt Textfarbe vom übergeordneten Element */
+    font-weight: 500;          /* optional: etwas kräftigerer Text */
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline; /* optional: Unterstreichung beim Hover */
+}
+
