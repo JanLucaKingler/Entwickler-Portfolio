@@ -1,9 +1,76 @@
-/*---------About-Section---------*/
 #about{
-    background-color: #2b2d30
+    background-color: #2b2d30;
+    height: 150vh;
 }
-.aboutMeText{
-    color: white;
-    font-size: 18px;
+
+.steckbrief-wrapper {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steckbrief {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 0;
+}
+
+.eintrag {
+    margin-top: 0;
+    display: flex;
     text-align: center;
+    gap: 30px;
+    font-size: 20px;
+    color: var(--whiteColor);
+}
+
+.eintrag i {
+    width: 25px;
+    text-align: center;
+    color: var(--eyeCatchColor);
+    font-size: 25px;
+}
+
+
+
+.about-me {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* zentriert die Absätze auf der Seite */
+    gap: 50px; /* Abstand zwischen den Absätzen */
+    padding: 0 20px;
+    font-size: 20px;
+    color: var(--whiteColor);
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px; /* sorgt dafür, dass es nicht zu breit wird */
+}
+
+.text-image.left img {
+    order: 0; /* Bild links */
+}
+
+.text-image.left p {
+    text-align: justify; /* Text links- und rechtsbündig */
+}
+
+.text-image.right img {
+    order: 1; /* Bild rechts */
+}
+
+.text-image.right p {
+    text-align: justify; /* Text links- und rechtsbündig */
+}
+
+.text-image img {
+    width: 200px; /* Breite der Bilder */
+    height: auto;
+    border-radius: 10px;
 }
