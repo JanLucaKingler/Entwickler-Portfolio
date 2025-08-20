@@ -104,3 +104,9 @@ button {
 button:hover {
     background: #005bb5;
 }
+
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top: 15px;
+}
