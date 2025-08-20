@@ -136,7 +136,7 @@
                 </article>
 
                 <article class="experience-details" data-stars="1">
-                    <img src="assets/icons/javascriptIcon.png" alt="javascript-logo" class="experience-details-icon">
+                    <img src="assets/icons/javascriptIcon.png" loading="lazy" alt="javascript-logo" class="experience-details-icon">
                     <div>
                         <h4>Javascript</h4>
                         <small class="text-light">Learning</small>
@@ -252,22 +252,26 @@
 <section id="contact">
     <h2 class="section-title">Kontakt</h2>
 
-        <div class="left-contact-side">
-            <p>janlucakingler@gmail.com</p>
-            <p>+49 231321 321321321</p>
+    <div class="contact-container">
+        <div class="contact-left">
+            <h2>Kontaktiere mich</h2>
+            <p>Email: <a href="mailto:janlucakingler@gmail.com" class="email-link">janlucakingler@gmail.com</a></p>
             <div class="social-icons">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://de.linkedin.com/in/jan-luca-kingler-45a45b348"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JanLucaKingler"><i class="fab fa-github"></i></a>
             </div>
         </div>
-    <div class="right-contact-side">
-       <form>
-           <input type="text" placeholder="Dein Name" name="Name" required>
-           <input type="email" placeholder="Deine Email" name="email" required>
-           <textarea name="message" id="" rows="7" placeholder="Dein Message..." required></textarea>
-           <button type="submit">Send</button>
-       </form>
+
+        <div class="contact-right">
+            <form>
+                <input type="text" placeholder="Dein Name" required>
+                <input type="email" placeholder="Deine Email" required>
+                <textarea placeholder="Deine Nachricht an mich" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
     </div>
+
 </section>
 
 <footer>
