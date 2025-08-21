@@ -1,34 +1,39 @@
-/*---------Portfolio-Section---------*/
-#portfolio{
+/* ---------- Portfolio Section ---------- */
+#portfolio {
     background-color: var(--secondColor);
     height: 70vh;
 }
-.portfolio-introduction{
+
+.portfolio-introduction {
     color: var(--whiteColor);
     font-size: 18px;
     text-align: center;
 }
-/*---------Github-Vorstellungsprojekte---------*/
-.container{
+
+/* ---------- Container ---------- */
+.container {
     width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    flex-wrap: wrap; /* falls mehr Karten kommen */
 }
 
-.container .card{
+/* ---------- Card Layout ---------- */
+.container .card {
     position: relative;
     cursor: pointer;
 }
 
-.container .card .face{
+.container .card .face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
-.container .card .face.face1{
+/* ---------- Vorderseite ---------- */
+.container .card .face.face1 {
     position: relative;
     background: var(--firstColor);
     display: flex;
@@ -38,30 +43,29 @@
     transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.container .card:hover .face.face1 {
     background: var(--eyeCatchColor);
     transform: translateY(0);
 }
 
-.container .card .face.face1 .content{
+.container .card .face.face1 .content {
     opacity: 0.2;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* vertikale Zentrierung innerhalb des Blocks */
+    justify-content: center;
 }
 
-.container .card:hover .face.face1 .content{
+.container .card:hover .face.face1 .content {
     opacity: 1;
 }
 
-
-.container .card .face.face1 .content img{
+.container .card .face.face1 .content img {
     max-width: 100px;
 }
 
-.container .card .face.face1 .content h3{
+.container .card .face.face1 .content h3 {
     margin: 10px 0 0;
     padding: 0;
     color: var(--whiteColor);
@@ -69,7 +73,8 @@
     font-size: 1.5em;
 }
 
-.container .card .face.face2{
+/* ---------- Rückseite ---------- */
+.container .card .face.face2 {
     position: relative;
     background: var(--firstColor);
     display: flex;
@@ -81,19 +86,19 @@
     transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.container .card:hover .face.face2 {
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p{
+.container .card .face.face2 .content p {
     margin: 0;
     padding: 0;
     color: var(--whiteColor);
 }
 
-.container .card .face.face2 .content a{
+.container .card .face.face2 .content a {
     margin: 15px 0 0;
-    display:  inline-block;
+    display: inline-block;
     text-decoration: none;
     font-weight: 900;
     color: var(--eyeCatchColor);
@@ -101,36 +106,48 @@
     border: 1px solid var(--firstColor);
 }
 
-.container .card .face.face2 .content a:hover{
+.container .card .face.face2 .content a:hover {
     background: var(--firstColor);
     color: var(--whiteColor);
 }
 
-/* Für Tablets und kleinere Geräte */
+/* ---------- Responsive ---------- */
+
+/* Tablets und kleinere Geräte */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;   /* untereinander */
+        align-items: center;      /* mittig */
+        width: 100%;
     }
 
     .container .card {
-        margin-bottom: 20px; /* Abstand zwischen den Karten */
+        margin-bottom: 20px;      /* Abstand zwischen den Karten */
     }
 
     .container .card .face {
-        width: 90%; /* statt fester 300px */
+        width: 90%;               /* flexibler statt fixer Breite */
         max-width: 400px;
-    }
-}
-
-/* Für ganz kleine Smartphones */
-@media (max-width: 480px) {
-    .container .card .face {
-        width: 100%; /* nimmt die ganze Breite ein */
     }
 
     #portfolio {
-        height: auto; /* fixe Höhe weg, sonst schneidet es Inhalte ab */
+        height: auto;             /* Höhe dynamisch */
+        padding: 40px 0;
+    }
+}
+
+/* Sehr kleine Smartphones */
+@media (max-width: 480px) {
+    .container {
+        align-items: center;      /* bleibt mittig */
+    }
+
+    .container .card .face {
+        width: 100%;              /* volle Breite */
+    }
+
+    #portfolio {
+        height: auto;
         padding: 40px 0;
     }
 }

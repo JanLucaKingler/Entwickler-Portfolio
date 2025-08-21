@@ -1,55 +1,134 @@
-#skills{
+/* ---------- Skills Section ---------- */
+#skills {
     background-color: var(--firstColor);
-    height: 70vh;
-}
-.container {
-    margin: 0 auto;
-    width: 75%;
-    color: var(--whiteColor);
-}
-
-.experience-container {
-    grid-gap: 2rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-}
-
-.experience__container>div {
-    background: transparent;
-    padding: 2.4rem 5rem;
-}
-
-.experience-code,
-.experience-tools {
-    text-align: center;
-}
-
-.experience-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 3rem;
-    margin-top: 1.5rem;
-    gap: 3rem;
-}
-
-.experience-details {
+    min-height: 100vh; /* volle Höhe auf großen Screens */
+    padding: 40px 20px; /* gleichmäßiger Abstand */
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
     align-items: center;
 }
 
-div {
-    display: block;
-    unicode-bidi: isolate;
+#skills .section-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--eyeCatchColor);
+}
+
+/* ---------- Container ---------- */
+#skills .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px; /* Begrenzung für große Screens */
+    color: var(--whiteColor);
+}
+
+/* ---------- Code & Tools Spalten ---------- */
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Spalten: Code | Tools */
+    gap: 2rem;
+    justify-content: center;
+}
+
+.experience__container > div {
+    background: transparent;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* ---------- Inhalte pro Spalte ---------- */
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* immer 2 Spalten nebeneinander */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-items: center; /* sorgt für mittige Ausrichtung */
+}
+
+/* ---------- Skill Cards ---------- */
+.experience-details {
+    display: flex;
+    flex-direction: column; /* Icon über Text */
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: transparent;
 }
 
 .experience-details-icon {
-    height: 3rem;
-    margin-top: 4px;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-details h4 {
+    margin: 0.3rem 0;
+}
+
+.experience-details small {
+    font-size: 0.9rem;
+    color: var(--whiteColor);
 }
 
 .star {
     color: var(--eyeCatchColor);
+}
+
+.experience-code,
+.experience-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-code h2,
+.experience-tools h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Handy ---------- */
+@media (max-width: 768px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #skills {
+        background-color: var(--firstColor);
+        min-height: 110vh;
+    }
+
+    #skills .section-title {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--eyeCatchColor);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+
+    .experience-details h4 {
+        font-size: 14px;
+    }
+
+    .experience-details small {
+        font-size: 11px;
+    }
 }
