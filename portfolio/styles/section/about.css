@@ -1,3 +1,43 @@
+@media (max-width: 480px) {
+    .text-image.left img,
+    .text-image.right img {
+        order: -1;
+        width: 120px;
+    }
+
+    .about-me {
+        font-size: 14px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-image {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #about{
+        background-color: #2b2d30;
+        height: 180vh;
+    }
+
+    .text-image img {
+        width: 150px;
+    }
+
+    .text-image.left img,
+    .text-image.right img {
+        order: -1;
+    }
+
+    .about-me {
+        font-size: 16px;
+        gap: 30px;
+    }
+}
+
 #about{
     background-color: #2b2d30;
     height: 150vh;
@@ -71,46 +111,4 @@
     width: 200px;
     height: auto;
     border-radius: 10px;
-}
-
-/* Handy-Optimierung */
-@media (max-width: 768px) {
-    .text-image {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    #about{
-        background-color: #2b2d30;
-        height: 180vh;
-    }
-
-
-    .text-image img {
-        width: 150px;
-    }
-
-    .text-image.left img,
-    .text-image.right img {
-        order: -1;
-    }
-
-    .about-me {
-        font-size: 16px;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .text-image.left img,
-    .text-image.right img {
-        order: -1;
-        width: 120px;
-    }
-
-    .about-me {
-        font-size: 14px;
-        gap: 20px;
-    }
 }
