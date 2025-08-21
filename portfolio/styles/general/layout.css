@@ -75,7 +75,6 @@ section {
 .section-title{
     margin-top: 0;
     text-align: center;
-    font-size: 2.5rem;
     color: var(--eyeCatchColor);
 }
 
@@ -103,22 +102,22 @@ footer p {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;             /* macht die <li> nebeneinander */
-    gap: 20px;                 /* Abstand zwischen den Links */
-    justify-content: center;   /* zentriert den Inhalt (optional) */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .footer-nav li a {
-    text-decoration: none;     /* entfernt Unterstreichung */
-    color: inherit;            /* übernimmt Textfarbe vom übergeordneten Element */
-    font-weight: 500;          /* optional: etwas kräftigerer Text */
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
 }
 
 .footer-nav li a:hover {
-    text-decoration: underline; /* optional: Unterstreichung beim Hover */
+    text-decoration: underline;
 }
 
-/* Verhindert horizontales Scrollen auf kleinen Geräten */
+
 html, body {
     overflow-x: hidden;
 }

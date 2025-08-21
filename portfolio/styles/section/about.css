@@ -37,8 +37,8 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* zentriert die Absätze auf der Seite */
-    gap: 50px; /* Abstand zwischen den Absätzen */
+    align-items: center;
+    gap: 50px;
     padding: 0 20px;
     font-size: 20px;
     color: var(--whiteColor);
@@ -48,27 +48,27 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    max-width: 900px; /* sorgt dafür, dass es nicht zu breit wird */
+    max-width: 900px;
 }
 
 .text-image.left img {
-    order: 0; /* Bild links */
+    order: 0;
 }
 
 .text-image.left p {
-    text-align: justify; /* Text links- und rechtsbündig */
+    text-align: justify;
 }
 
 .text-image.right img {
-    order: 1; /* Bild rechts */
+    order: 1;
 }
 
 .text-image.right p {
-    text-align: justify; /* Text links- und rechtsbündig */
+    text-align: justify;
 }
 
 .text-image img {
-    width: 200px; /* Breite der Bilder */
+    width: 200px;
     height: auto;
     border-radius: 10px;
 }
@@ -86,7 +86,7 @@
         height: 180vh;
     }
 
-    /* egal ob left oder right → Bild immer oben */
+
     .text-image img {
         width: 150px;
     }

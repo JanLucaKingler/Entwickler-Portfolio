@@ -1,8 +1,8 @@
 /* ---------- Skills Section ---------- */
 #skills {
     background-color: var(--firstColor);
-    min-height: 100vh; /* volle Höhe auf großen Screens */
-    padding: 40px 20px; /* gleichmäßiger Abstand */
+    min-height: 100vh;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
 #skills .section-title {
     margin-top: 0;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 32px;
     color: var(--eyeCatchColor);
 }
 
@@ -19,14 +19,14 @@
 #skills .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px; /* Begrenzung für große Screens */
+    max-width: 1000px;
     color: var(--whiteColor);
 }
 
 /* ---------- Code & Tools Spalten ---------- */
 .experience-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 Spalten: Code | Tools */
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     justify-content: center;
 }
@@ -40,16 +40,16 @@
 /* ---------- Inhalte pro Spalte ---------- */
 .experience-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* immer 2 Spalten nebeneinander */
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin-top: 1.5rem;
-    justify-items: center; /* sorgt für mittige Ausrichtung */
+    justify-items: center;
 }
 
 /* ---------- Skill Cards ---------- */
 .experience-details {
     display: flex;
-    flex-direction: column; /* Icon über Text */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1rem;

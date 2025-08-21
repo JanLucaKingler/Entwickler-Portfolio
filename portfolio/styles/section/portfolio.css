@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    flex-wrap: wrap; /* falls mehr Karten kommen */
+    flex-wrap: wrap;
 }
 
 /* ---------- Card Layout ---------- */
@@ -112,26 +112,24 @@
 }
 
 /* ---------- Responsive ---------- */
-
-/* Tablets und kleinere Geräte */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;   /* untereinander */
-        align-items: center;      /* mittig */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
     .container .card {
-        margin-bottom: 20px;      /* Abstand zwischen den Karten */
+        margin-bottom: 20px;
     }
 
     .container .card .face {
-        width: 90%;               /* flexibler statt fixer Breite */
+        width: 90%;
         max-width: 400px;
     }
 
     #portfolio {
-        height: auto;             /* Höhe dynamisch */
+        height: auto;
         padding: 40px 0;
     }
 }
@@ -139,11 +137,11 @@
 /* Sehr kleine Smartphones */
 @media (max-width: 480px) {
     .container {
-        align-items: center;      /* bleibt mittig */
+        align-items: center;
     }
 
     .container .card .face {
-        width: 100%;              /* volle Breite */
+        width: 100%;
     }
 
     #portfolio {

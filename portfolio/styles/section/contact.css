@@ -1,7 +1,7 @@
 #contact {
     background-color: var(--firstColor);
     height: 80vh;
-    color: white;
+    color: var(--whiteColor);
 }
 
 .section-title {
@@ -44,7 +44,7 @@
 .contact-left p {
     margin-bottom: 20px;
     font-size: 17px;
-    color: white;
+    color: var(--whiteColor);
     text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ form {
 
 input, textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--whiteColor);
     border-radius: 6px;
     font-size: 14px;
     width: 100%;
@@ -93,7 +93,7 @@ textarea {
 button {
     padding: 12px;
     background: var(--secondColor);
-    color: #fff;
+    color: var(--whiteColor);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -106,7 +106,7 @@ button:hover {
 }
 
 #msg{
-    color: #61b752;
+    color: var(--successfullyMessageColor);
     display: block;
     margin-top: 15px;
 }
