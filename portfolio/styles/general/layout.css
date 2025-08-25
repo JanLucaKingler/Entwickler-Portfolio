@@ -40,6 +40,18 @@ nav li a:hover {
     color: var(--eyeCatchColor);
 }
 
+/* Burger-Button */
+.burger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: var(--whiteColor);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
 /*------------------Header------------------*/
 #header {
     width: 100%;
@@ -67,6 +79,8 @@ nav li a:hover {
 
 .lk-monogram-picture {
     margin-left: 35px;
+    height: 200px;
+    width: 200px;
 }
 
 .job-title {
@@ -80,7 +94,7 @@ section {
 }
 
 .section-title {
-    margin-top: 0;
+   padding-top: 30px;
     text-align: center;
     color: var(--eyeCatchColor);
 }
@@ -117,8 +131,52 @@ footer p {
     text-decoration: underline;
 }
 
-/*------------------Mobile------------------*/
+/*------------------Mobile (max 768px)------------------*/
 @media (max-width: 768px) {
+    /* Navigation */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--firstColor);
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+        font-size: 40px;
+    }
+
+    /* Header-Text kleiner */
+    .header-text {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    .job-title {
+        font-size: 16px;
+    }
+
+    /* Logo kleiner */
+    .lk-monogram-picture {
+        height: 120px;
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    /* Footer */
     .footer-nav {
         gap: 10px;
         flex-wrap: wrap;

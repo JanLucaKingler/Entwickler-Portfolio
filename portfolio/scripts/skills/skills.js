@@ -11,3 +11,21 @@ document.querySelectorAll('.experience-details').forEach(item => {
         starsContainer.appendChild(star);
     }
 });
+
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+const links = navLinks.querySelectorAll('a');
+
+// Menü ein-/ausblenden
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+
+// Menü schließen bei Klick auf Link
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        burger.classList.remove('open');
+    });
+});

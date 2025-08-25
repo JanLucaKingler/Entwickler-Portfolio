@@ -2,15 +2,7 @@
     background-color: var(--firstColor);
     height: auto;
     color: var(--whiteColor);
-    padding: 40px 20px;
-}
 
-.section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--eyeCatchColor);
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .page-wrapper {

@@ -1,19 +1,10 @@
 #skills {
     background-color: var(--firstColor);
     height: auto;
-    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#skills .section-title {
-    margin-top: 0;
-    text-align: center;
-    font-size: 32px;
-    color: var(--eyeCatchColor);
-}
-
 #skills .container {
     margin: 0 auto;
     width: 100%;
@@ -97,16 +88,7 @@
 
     #skills {
         background-color: var(--firstColor);
-        min-height: 110vh;
     }
-
-    #skills .section-title {
-        margin-top: 0;
-        text-align: center;
-        font-size: 1.5rem;
-        color: var(--eyeCatchColor);
-    }
-
 }
 
 @media (max-width: 480px) {
