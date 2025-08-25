@@ -67,8 +67,6 @@ nav li a:hover {
     display: block;
 }
 
-
-/* Burger-Button */
 .burger {
     display: none;
     font-size: 28px;
@@ -162,7 +160,6 @@ footer p {
 
 /*------------------Mobile (max 768px)------------------*/
 @media (max-width: 768px) {
-    /* Navigation */
     nav ul {
         display: none;
         flex-direction: column;
@@ -184,7 +181,6 @@ footer p {
         font-size: 40px;
     }
 
-    /* Header-Text kleiner */
     .header-text {
         font-size: 20px;
         padding-left: 10px;
@@ -198,14 +194,12 @@ footer p {
         font-size: 16px;
     }
 
-    /* Logo kleiner */
     .lk-monogram-picture {
         height: 120px;
         width: 120px;
         margin-left: 10px;
     }
 
-    /* Footer */
     .footer-nav {
         gap: 10px;
         flex-wrap: wrap;
