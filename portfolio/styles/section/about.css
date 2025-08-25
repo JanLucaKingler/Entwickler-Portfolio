@@ -1,5 +1,5 @@
 #about {
-    background-color: #2b2d30;
+    background-color: var(--secondColor);
     height: auto;
 }
 
@@ -43,7 +43,6 @@
     font-size: 25px;
 }
 
-/* --- Desktop First --- */
 .text-image {
     display: flex;
     align-items: center;
@@ -67,7 +66,7 @@
     text-align: justify;
 }
 
-/* --- Tablet & Mobile --- */
+/*------------------Mobile------------------*/
 @media (max-width: 768px) {
     .text-image {
         flex-direction: column;

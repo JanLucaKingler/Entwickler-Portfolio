@@ -1,4 +1,3 @@
-/* ---------- Skills Section ---------- */
 #skills {
     background-color: var(--firstColor);
     height: auto;
@@ -15,7 +14,6 @@
     color: var(--eyeCatchColor);
 }
 
-/* ---------- Container ---------- */
 #skills .container {
     margin: 0 auto;
     width: 100%;
@@ -23,7 +21,6 @@
     color: var(--whiteColor);
 }
 
-/* ---------- Code & Tools Spalten ---------- */
 .experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,7 +34,6 @@
     text-align: center;
 }
 
-/* ---------- Inhalte pro Spalte ---------- */
 .experience-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,7 +42,6 @@
     justify-items: center;
 }
 
-/* ---------- Skill Cards ---------- */
 .experience-details {
     display: flex;
     flex-direction: column;
@@ -89,7 +84,7 @@
     margin-bottom: 1rem;
 }
 
-/* ---------- Handy ---------- */
+/*------------------Mobile------------------*/
 @media (max-width: 768px) {
     .experience-container {
         grid-template-columns: 1fr;
