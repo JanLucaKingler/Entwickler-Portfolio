@@ -94,9 +94,10 @@ section {
 }
 
 .section-title {
-   padding-top: 30px;
+    padding-top: 30px;
     text-align: center;
     color: var(--eyeCatchColor);
+    font-size: 32px;
 }
 
 /*------------------Footer------------------*/
