@@ -1,50 +1,21 @@
-@media (max-width: 480px) {
-    .text-image.left img,
-    .text-image.right img {
-        order: -1;
-        width: 120px;
-    }
-
-    .about-me {
-        font-size: 14px;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-image {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    #about{
-        background-color: #2b2d30;
-        height: 180vh;
-    }
-
-    .text-image img {
-        width: 150px;
-    }
-
-    .text-image.left img,
-    .text-image.right img {
-        order: -1;
-    }
-
-    .about-me {
-        font-size: 16px;
-        gap: 30px;
-    }
-}
-
-#about{
+#about {
     background-color: #2b2d30;
-    height: 150vh;
+    height: auto;
+}
+
+.about-me {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: var(--whiteColor);
 }
 
 .steckbrief-wrapper {
-    height: 50vh;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +25,6 @@
     display: flex;
     flex-direction: column;
     gap: 55px;
-    margin-top: 0;
     align-items: center;
 }
 
@@ -73,42 +43,59 @@
     font-size: 25px;
 }
 
-.about-me {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 0 20px;
-    font-size: 20px;
-    color: var(--whiteColor);
-}
-
+/* --- Desktop First --- */
 .text-image {
     display: flex;
     align-items: center;
     gap: 30px;
     max-width: 900px;
+    flex-direction: row;
+    text-align: left;
 }
 
 .text-image.left img {
     order: 0;
-}
-
-.text-image.left p {
-    text-align: justify;
+    width: 200px;
 }
 
 .text-image.right img {
     order: 1;
+    width: 200px;
 }
 
-.text-image.right p {
+.text-image p {
     text-align: justify;
 }
 
-.text-image img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
+/* --- Tablet & Mobile --- */
+@media (max-width: 768px) {
+    .text-image {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .text-image img,
+    .text-image.left img,
+    .text-image.right img {
+        order: -1;
+        width: 120px;
+    }
+
+    .about-me {
+        font-size: 16px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-image img {
+        width: 120px;
+    }
+
+    .about-me {
+        font-size: 14px;
+        gap: 20px;
+    }
 }

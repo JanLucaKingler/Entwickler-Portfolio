@@ -1,7 +1,7 @@
 /* ---------- Skills Section ---------- */
 #skills {
     background-color: var(--firstColor);
-    min-height: 100vh;
+    height: auto;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;

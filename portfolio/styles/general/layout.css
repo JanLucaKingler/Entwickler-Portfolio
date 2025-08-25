@@ -50,7 +50,6 @@ nav li a {
 }
 
 .header-text h1 span {
-
     color: #48EDDD;
 }
 
@@ -69,7 +68,7 @@ html {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
 }
 .section-title{
@@ -115,10 +114,5 @@ footer p {
 
 .footer-nav li a:hover {
     text-decoration: underline;
-}
-
-
-html, body {
-    overflow-x: hidden;
 }
 
