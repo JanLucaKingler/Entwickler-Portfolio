@@ -1,8 +1,7 @@
 #contact {
     background-color: var(--firstColor);
     height: auto;
-    color: var(--whiteColor);
-
+    color: var(--textColor);
 }
 
 .page-wrapper {
@@ -40,13 +39,13 @@
 .contact-left p {
     margin-bottom: 20px;
     font-size: 17px;
-    color: var(--whiteColor);
+    color: var(--textColor);
     text-decoration: none;
 }
 
 .email-link {
     text-decoration: none;
-    color: var(--whiteColor);
+    color: var(--textColor);
 }
 
 .social-icons {
@@ -58,7 +57,7 @@
     display: inline-block;
     margin-right: 10px;
     font-size: 30px;
-    color: var(--whiteColor);
+    color: var(--textColor);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -75,7 +74,7 @@ form {
 
 input, textarea {
     padding: 10px;
-    border: 1px solid var(--whiteColor);
+    border: 1px solid var(--textColor);
     border-radius: 6px;
     font-size: 14px;
     width: 100%;
@@ -89,7 +88,7 @@ textarea {
 button {
     padding: 12px;
     background: var(--secondColor);
-    color: var(--whiteColor);
+    color: var(--textColor);
     border: none;
     border-radius: 6px;
     cursor: pointer;

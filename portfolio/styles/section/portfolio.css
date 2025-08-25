@@ -4,7 +4,7 @@
 }
 
 .portfolio-introduction {
-    color: var(--whiteColor);
+    color: var(--textColor);
     font-size: 18px;
     text-align: center;
 }
@@ -64,7 +64,7 @@
 .container .card .face.face1 .content h3 {
     margin: 10px 0 0;
     padding: 0;
-    color: var(--whiteColor);
+    color: var(--textColor);
     text-align: center;
     font-size: 1.5em;
 }
@@ -96,7 +96,7 @@
 .container .card .face.face2 .content p {
     margin: 0;
     padding: 0;
-    color: var(--whiteColor);
+    color: var(--textColor);
 }
 
 .container .card .face.face2 .content a {
@@ -112,7 +112,7 @@
 
 .container .card .face.face2 .content a:hover {
     background: var(--firstColor);
-    color: var(--whiteColor);
+    color: var(--textColor);
 }
 
 /*------------------Mobile------------------*/

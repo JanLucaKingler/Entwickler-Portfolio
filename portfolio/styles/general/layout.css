@@ -29,7 +29,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: var(--whiteColor);
+    color: var(--textColor);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,13 +40,41 @@ nav li a:hover {
     color: var(--eyeCatchColor);
 }
 
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--firstColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+#theme-switch svg{
+    fill: var(--textColor);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.whiteMode #theme-switch svg:first-child{
+    display: none;
+}
+
+.whiteMode #theme-switch svg:last-child{
+    display: block;
+}
+
+
 /* Burger-Button */
 .burger {
     display: none;
     font-size: 28px;
     background: none;
     border: none;
-    color: var(--whiteColor);
+    color: var(--textColor);
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -57,19 +85,19 @@ nav li a:hover {
     width: 100%;
     background-size: cover;
     background-position: center;
-    color: var(--whiteColor);
+    color: var(--textColor);
 }
 
 .header-text {
     margin-top: 6%;
     padding-left: 5%;
     font-size: 30px;
-    color: var(--whiteColor);
+    color: var(--textColor);
 }
 
 .header-text h1 {
     font-size: 45px;
-    color: white;
+    color: var(--textColor);
     margin-bottom: 0.3em;
 }
 
@@ -105,7 +133,7 @@ footer {
     text-align: center;
     background-color: var(--secondColor);
     height: auto;
-    color: var(--whiteColor);
+    color: var(--textColor);
     padding: 20px 0;
 }
 
