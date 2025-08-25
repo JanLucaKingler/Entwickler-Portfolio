@@ -91,7 +91,7 @@ body {
 footer {
     text-align: center;
     background-color: var(--secondColor);
-    height: 30vh;
+    height: auto;
     color: var(--whiteColor);
 }
 footer p {
