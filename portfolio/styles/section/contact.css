@@ -1,6 +1,6 @@
 #contact {
     background-color: var(--firstColor);
-    height: auto; /* Höhe flexibel, sonst gibt's Probleme bei Mobile */
+    height: auto;
     color: var(--whiteColor);
     padding: 40px 20px;
 }
@@ -10,7 +10,7 @@
     font-weight: bold;
     color: var(--eyeCatchColor);
     margin-bottom: 20px;
-    text-align: center; /* Titel zentrieren auf allen Devices */
+    text-align: center;
 }
 
 .page-wrapper {
@@ -33,12 +33,12 @@
     width: 100%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-    flex-wrap: wrap; /* wichtig für responsives Verhalten */
+    flex-wrap: wrap;
 }
 
 .contact-left, .contact-right {
     flex: 1;
-    min-width: 280px; /* damit sie auf kleinen Screens umbrechen */
+    min-width: 280px;
 }
 
 .contact-left h2 {
@@ -115,24 +115,54 @@ button:hover {
     margin-top: 15px;
 }
 
-/* --- Responsive Anpassungen --- */
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .contact-container {
-        flex-direction: column; /* stapeln statt nebeneinander */
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 20px;
         gap: 30px;
+        box-sizing: border-box;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .contact-left, .contact-right {
-        width: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    .contact-left h2,
-    .contact-left p,
     .social-icons {
-        text-align: center;
+        display: flex;
         justify-content: center;
+        gap: 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto
+    }
+
+    button {
+        align-self: center;
     }
 }

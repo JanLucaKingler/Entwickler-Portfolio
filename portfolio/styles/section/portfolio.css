@@ -29,7 +29,7 @@
 .container .card .face {
     width: 300px;
     height: 200px;
-    transition: transform 0.5s; /* nur Flip-Animation */
+    transition: transform 0.5s;
 }
 
 /* ---------- Vorderseite ---------- */
@@ -92,10 +92,10 @@
 
 .container .card .face.face2 .content {
     display: flex;
-    flex-direction: column; /* vertikale Anordnung */
-    align-items: center;    /* horizontal zentriert */
-    justify-content: center; /* optional: vertikal zentriert */
-    gap: 10px;               /* Abstand zwischen Buttons */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .container .card .face.face2 .content p {
@@ -105,14 +105,14 @@
 }
 
 .container .card .face.face2 .content a {
-    margin: 0; /* kein extra margin, Abstand über gap */
+    margin: 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
     color: var(--eyeCatchColor);
     padding: 5px 15px;
     border: 1px solid var(--firstColor);
-    transition: background 0.3s, color 0.3s; /* nur Hover-Effekte */
+    transition: background 0.3s, color 0.3s;
 }
 
 .container .card .face.face2 .content a:hover {
@@ -121,7 +121,7 @@
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -143,13 +143,12 @@
     }
 
     .container .card .face.face2 .content {
-        flex-direction: column; /* Buttons vertikal */
+        flex-direction: column;
         align-items: center;
     }
 }
 
-/* Sehr kleine Smartphones */
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
     .container {
         align-items: center;
     }

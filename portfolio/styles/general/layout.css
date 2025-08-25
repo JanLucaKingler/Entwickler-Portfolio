@@ -116,3 +116,11 @@ footer p {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .footer-nav {
+        gap: 10px; /* kleinerer Abstand zwischen Links auf Mobile */
+        flex-wrap: wrap; /* optional: Zeilenumbruch bei sehr kleinen Screens */
+        justify-content: center;
+    }
+}
+
