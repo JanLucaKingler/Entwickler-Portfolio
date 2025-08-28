@@ -121,6 +121,7 @@ section {
 }
 
 .section-title {
+    margin-top: 0;
     padding-top: 30px;
     text-align: center;
     color: var(--eyeCatchColor);

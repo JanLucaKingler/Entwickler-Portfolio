@@ -78,6 +78,7 @@ input, textarea {
     border-radius: 6px;
     font-size: 14px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
@@ -116,11 +117,6 @@ button:hover {
         padding: 20px;
         gap: 30px;
         box-sizing: border-box;
-    }
-
-    .section-title {
-        text-align: center;
-        margin-bottom: 20px;
     }
 
     .contact-left, .contact-right {
