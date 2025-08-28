@@ -51,6 +51,7 @@ nav li a:hover {
     align-items: center;
     color: var(--textColor);
 }
+
 #theme-switch svg{
     fill: var(--textColor);
 }

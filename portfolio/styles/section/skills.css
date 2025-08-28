@@ -19,12 +19,6 @@
     justify-content: center;
 }
 
-.experience__container > div {
-    background: transparent;
-    padding: 1.5rem;
-    text-align: center;
-}
-
 .experience-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
