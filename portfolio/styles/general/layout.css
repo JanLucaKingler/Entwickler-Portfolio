@@ -116,7 +116,6 @@ nav li a:hover {
 
 /*------------------Sections-General------------------*/
 section {
-    min-height: 100vh;
     scroll-snap-align: start;
 }
 
