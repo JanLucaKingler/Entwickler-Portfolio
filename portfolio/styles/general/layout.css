@@ -126,6 +126,14 @@ section {
     text-align: center;
     color: var(--eyeCatchColor);
     font-size: 32px;
+    opacity: 0;             /* unsichtbar am Anfang */
+    transform: translateY(20px); /* leicht nach unten verschoben */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* sanfte Animation */
+}
+
+.section-title.visible {
+    opacity: 1;             /* sichtbar */
+    transform: translateY(0); /* ursprüngliche Position */
 }
 
 /*------------------Footer------------------*/
