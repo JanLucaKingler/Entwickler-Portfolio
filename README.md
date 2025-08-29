@@ -28,7 +28,9 @@ Das Projekt ist noch lange nicht fertig – ich möchte es Schritt für Schritt 
 - [ ] 🖼️ Projekt-Detailseiten mit mehr Infos & Screenshots   
 - [ ] 🔒 Kontaktformular mit Spam-Schutz  
 - [ ] 🚀 Verbindung zu echten Backend-Services
-- [ ] 🚀 404-Fallback-Seite erstellen 
+- [ ] 🚀 404-Fallback-Seite erstellen
+- [ ] 🏷️ Meta-Tags für Social Media
+- [ ] ▶️ Mini-Interaktive Demos im Portfolio
 
 ---
 
