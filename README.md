@@ -2,7 +2,7 @@
 
 Willkommen zu meinem **allerersten Frontend-Projekt**! 🚀  
 Ich bin aktuell **Azubi Fachinformatiker für Anwendungsentwicklung** und habe dieses Projekt als **privates Lernprojekt** umgesetzt.  
-Da mein Schwerpunkt eigentlich im **Backend** liegt, bitte nicht zu streng mit mir sein, was das Frontend angeht 😉  
+Da mein Schwerpunkt eigentlich im **Backend** liegt, bitte nicht zu streng mit mir sein was das Frontend angeht 😉  
 
 ---
 
