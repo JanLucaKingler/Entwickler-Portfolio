@@ -16,42 +16,30 @@ console.log("Bitte respektiere die Seite und ihre Sicherheit. 🚫");
 
 /*------------------Dark-/WhiteMode------------------*/
 
-let whiteMode = localStorage.getItem("whiteMode");
-const themeSwitch = document.querySelector('#theme-switch'); // ID beachten
+const themeSwitch = document.querySelector('#theme-switch');
+const STORAGE_KEY = "whiteMode";
 
 const enableWhiteMode = () => {
     document.body.classList.add("whiteMode");
-    localStorage.setItem("whiteMode", "active");
-}
+    localStorage.setItem(STORAGE_KEY, "active");
+};
 const disableWhiteMode = () => {
     document.body.classList.remove("whiteMode");
-    localStorage.removeItem("whiteMode");
+    localStorage.removeItem(STORAGE_KEY);
+};
+
+if (localStorage.getItem(STORAGE_KEY) === "active") {
+    enableWhiteMode();
 }
 
-if(whiteMode === "active") enableWhiteMode();
-
-themeSwitch.addEventListener("click", () => {
-    whiteMode = localStorage.getItem("whiteMode");
-    whiteMode !== "active" ? enableWhiteMode() : disableWhiteMode();
+themeSwitch?.addEventListener("click", () => {
+    document.body.classList.toggle("whiteMode");
+    if (document.body.classList.contains("whiteMode")) {
+        localStorage.setItem(STORAGE_KEY, "active");
+    } else {
+        localStorage.removeItem(STORAGE_KEY);
+    }
 });
-
-/*------------------Burger Menü------------------*/
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('nav-links');
-const links = navLinks.querySelectorAll('a');
-
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    burger.classList.toggle('open');
-});
-
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        burger.classList.remove('open');
-    });
-})
-
 /*------------------Section-Title-Animation------------------*/
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
