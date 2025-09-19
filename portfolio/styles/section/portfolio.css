@@ -1,6 +1,7 @@
 #portfolio {
     background-color: var(--secondColor);
     height: auto;
+    scroll-margin-top: 80px;
 }
 
 .portfolio-introduction {

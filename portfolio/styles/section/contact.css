@@ -2,6 +2,7 @@
     background-color: var(--firstColor);
     height: auto;
     color: var(--textColor);
+    scroll-margin-top: 30px;
 }
 
 .page-wrapper {
