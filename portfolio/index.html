@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/favicon.svg">
-    ,
+    <link rel="icon" type="image/png" href="assets/svg/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles/general/layout.css">
     <link rel="stylesheet" href="styles/general/color.css">
@@ -17,7 +16,6 @@
     <title>Jan-Luca Kingler - Portfolio Website</title>
 </head>
 <body>
-
 <header class="header">
     <a href="#" class="logo">Kingler.</a>
 
@@ -28,19 +26,20 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Kontakt</a>
     </nav>
 </header>
 
 <section class="home">
     <div class="home-content">
-        <h1>Hi, Ich bin <br>Jan-Luca Kingler</h1>
+
+        <h1>Jan-Luca Kingler</h1>
         <h3>Backend Developer</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis delectus doloremque dolores
             ducimus earum eligendi error eveniet facilis, in reiciendis saepe sapiente sequi veniam vero,
             voluptates.</p>
         <div class="btn-box">
-            <a href="#" class="btn">About Me</a>
+            <a href="#about" class="btn">About Me</a>
             <a href="#contact" class="btn">Lets Talk</a>
         </div>
     </div>
@@ -285,10 +284,10 @@
         <div class="contact-right">
             <form name="submit-to-google-sheet">
                 <label>
-                    <input type="text" name="name" placeholder="Dein Name" required>
+                    <input type="text" name="name" placeholder="Dein Name" autocomplete="name" required>
                 </label>
                 <label>
-                    <input type="email" name="email" placeholder="Deine Email" required>
+                    <input type="email" name="email" placeholder="Deine Email" autocomplete="email" required>
                 </label>
                 <label>
                     <textarea placeholder="Deine Nachricht an mich" name="message" required></textarea>
@@ -306,19 +305,19 @@
     <br>
     <ul class="footer-nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#skills">Technische Fähigkeiten</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Kontakt</a></li>
     </ul>
     <p>© Jan-Luca Kingler 2025</p>
     <p>Icons created by - Flatico</p>
-    <p>Brand icons from skill section from - Icon8</p>
+    <p>Brand icons - Icon8</p>
 
 </footer>
+<script src="scripts/theme/header.js"></script>
 <script src="scripts/contact/contact.js"></script>
 <script src="scripts/skills/skills.js"></script>
-<script src="scripts/theme/header.js"></script>
 <script src="scripts/theme/theme.js"></script>
 </body>
 </html>
