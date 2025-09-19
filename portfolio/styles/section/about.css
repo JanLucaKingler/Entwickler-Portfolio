@@ -83,6 +83,19 @@
 }
 
 /*------------------Mobile------------------*/
+@media (max-width: 1520px) {
+    .header-text h1 span::before {
+        content: "\A";
+        white-space: pre;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    .about-me {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 768px) {
     .text-image {
         flex-direction: column;
@@ -91,9 +104,7 @@
         gap: 20px;
     }
 
-    .text-image img,
-    .text-image.left img,
-    .text-image.right img {
+    .text-image img {
         order: -1;
         width: 120px;
     }
@@ -105,12 +116,12 @@
 }
 
 @media (max-width: 480px) {
-    .text-image img {
-        width: 120px;
-    }
-
     .about-me {
         font-size: 14px;
         gap: 20px;
+    }
+
+    .text-image img {
+        width: 120px;
     }
 }
