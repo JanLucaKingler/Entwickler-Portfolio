@@ -180,9 +180,6 @@
 }
 
 @media (max-width: 520px) {
-    html {
-
-    }
     .home-content p{
         font-size: 13px;
     }

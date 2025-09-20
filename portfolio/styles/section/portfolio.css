@@ -1,6 +1,5 @@
 #portfolio {
     background-color: var(--secondColor);
-    height: auto;
     scroll-margin-top: 69px;
 }
 
@@ -28,14 +27,15 @@
     width: 300px;
     height: 200px;
     transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .container .card .face.face1 {
     position: relative;
     background: var(--firstColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
     transform: translateY(100px);
 }
@@ -73,11 +73,7 @@
 .container .card .face.face2 {
     position: relative;
     background: var(--firstColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
-    box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
 }
@@ -117,7 +113,7 @@
 }
 
 /*------------------Mobile------------------*/
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -134,7 +130,6 @@
     }
 
     #portfolio {
-        height: auto;
         padding: 40px 0;
     }
 
@@ -144,26 +139,7 @@
     }
 }
 
-@media (max-width: 1050px) {
-    .container {
-        align-items: center;
-    }
-
-    .container .card .face {
-        width: 100%;
-    }
-
-    #portfolio {
-        height: auto;
-        padding: 40px 0;
-    }
-
-    .container .card .face.face2 .content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
+/*------------------Desktop------------------*/
 @media (min-width: 769px) {
     #portfolio {
         min-height: 50vh;

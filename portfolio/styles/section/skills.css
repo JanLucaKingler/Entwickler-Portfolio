@@ -1,11 +1,11 @@
 #skills {
     background-color: var(--firstColor);
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 69px;
 }
+
 #skills .container {
     margin: 0 auto;
     width: 100%;
@@ -72,6 +72,10 @@
 
 /*------------------Mobile------------------*/
 @media (max-width: 768px) {
+    #skills {
+        scroll-margin-top: 112px;
+    }
+
     .experience-container {
         grid-template-columns: 1fr;
     }
@@ -80,19 +84,10 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-
-    #skills {
-        background-color: var(--firstColor);
-    }
 }
 
 @media (max-width: 480px) {
-    .experience-container {
-        grid-template-columns: 1fr;
-    }
-
     .experience-content {
-        grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
     }
 

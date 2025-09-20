@@ -1,4 +1,4 @@
-/*---------Color DarkMode/WhiteMode---------*/
+
 :root {
     --firstColor: #1e1f22;
     --secondColor: #2b2d30;
@@ -7,13 +7,6 @@
     --successfullyMessageColor: #61b752;
 }
 
-.whiteMode{
-    --firstColor: #e5e5e5;
-    --secondColor: #f5f5f5;
-    --eyeCatchColor: #9D00FF;
-    --textColor: #000;
-    --successfullyMessageColor: #61b752;
-}
 
 
 
