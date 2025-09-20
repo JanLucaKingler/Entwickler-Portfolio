@@ -14,32 +14,6 @@ console.log("Jegliche unautorisierte Veränderung oder das Ausführen von Skript
 console.log("© 2025 All Rights Reserved – Alle Rechte vorbehalten.");
 console.log("Bitte respektiere die Seite und ihre Sicherheit. 🚫");
 
-/*------------------Dark-/WhiteMode------------------*/
-
-const themeSwitch = document.querySelector('#theme-switch');
-const STORAGE_KEY = "whiteMode";
-
-const enableWhiteMode = () => {
-    document.body.classList.add("whiteMode");
-    localStorage.setItem(STORAGE_KEY, "active");
-};
-const disableWhiteMode = () => {
-    document.body.classList.remove("whiteMode");
-    localStorage.removeItem(STORAGE_KEY);
-};
-
-if (localStorage.getItem(STORAGE_KEY) === "active") {
-    enableWhiteMode();
-}
-
-themeSwitch?.addEventListener("click", () => {
-    document.body.classList.toggle("whiteMode");
-    if (document.body.classList.contains("whiteMode")) {
-        localStorage.setItem(STORAGE_KEY, "active");
-    } else {
-        localStorage.removeItem(STORAGE_KEY);
-    }
-});
 /*------------------Section-Title-Animation------------------*/
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
