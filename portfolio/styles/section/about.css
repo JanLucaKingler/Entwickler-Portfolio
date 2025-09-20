@@ -126,3 +126,9 @@
         width: 120px;
     }
 }
+
+@media (min-width: 769px) {
+    #about {
+        min-height: 150vh;
+    }
+}

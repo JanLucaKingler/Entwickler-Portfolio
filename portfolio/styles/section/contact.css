@@ -80,6 +80,7 @@ input, textarea {
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
+    color: black;
 }
 
 textarea {
@@ -153,5 +154,11 @@ button:hover {
 
     button {
         align-self: center;
+    }
+}
+
+@media (min-width: 769px) {
+    #contact {
+        min-height: 50vh;
     }
 }
