@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Seite nicht gefunden</title>
+    <style>
+        :root {
+            --firstColor: #1e1f22;
+            --secondColor: #2b2d30;
+            --eyeCatchColor: #48EDDD;
+            --textColor: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--firstColor);
+            color: var(--textColor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .error-container {
+            background-color: var(--secondColor);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .error-container h1 {
+            font-size: 8rem;
+            margin: 0;
+            color: var(--eyeCatchColor);
+        }
+
+        .error-container h2 {
+            font-size: 2rem;
+            margin: 10px 0 20px;
+        }
+
+        .error-container p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .error-container a {
+            text-decoration: none;
+            color: var(--firstColor);
+            background-color: var(--eyeCatchColor);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        /* Mobile Anpassung */
+        @media (max-width: 480px) {
+            .error-container h1 {
+                font-size: 5rem;
+            }
+
+            .error-container h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <h1>404</h1>
+    <h2>Seite nicht gefunden</h2>
+    <p>Die von Ihnen gesuchte Seite existiert leider nicht.</p>
+    <a href="index.html">Zur Startseite</a>
+</div>
+</body>
+</html>
