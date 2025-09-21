@@ -23,3 +23,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 document.querySelectorAll('.section-title').forEach(el => observer.observe(el));
+
+/*------------------Hash-URL entfernen------------------*/
+document.querySelectorAll('a.no-hash').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Verhindert den Hash in der URL
+        const targetId = this.getAttribute('data-target');
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
