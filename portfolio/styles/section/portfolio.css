@@ -145,7 +145,14 @@
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
     .portfolio-container .portfolio-box:first-child {
         order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    #portfolio {
+        scroll-margin-top: 112px;
     }
 }
