@@ -23,11 +23,46 @@
     image-rendering: smooth;
 }
 
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+
+.section-header {
+    font-size: 20px;
+    color: var(--eyeCatchColor);
+    margin: 0;
+}
+
+.text-image.left .text-content {
+    text-align: left;
+}
+
+.text-image.right .text-content {
+    text-align: right;
+}
+
+.text-image.left {
+    flex-direction: row;
+}
+
+.text-image.right {
+    flex-direction: row-reverse;
+}
+
 .header-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+}
+
+.about-second-header{
+    text-align: center;
+    color: var(--eyeCatchColor);
+    font-size: 20px;
 }
 
 .profile-wrapper {
@@ -40,20 +75,22 @@
 .profile {
     display: flex;
     flex-direction: column;
-    gap: 55px;
-    align-items: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding-left: 300px;
 }
 
 .entry {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 50px;
     font-size: 16px;
     color: var(--textColor);
+    padding-bottom: 60px;
 }
 
 .entry i {
-    width: 25px;
+    width: 30px;
     text-align: center;
     color: var(--eyeCatchColor);
     font-size: 25px;
@@ -70,7 +107,7 @@
 
 .text-image img {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     order: 0;
 }
@@ -81,7 +118,6 @@
 }
 
 .text-image.right img {
-    order: 1;
     width: 200px;
 }
 
@@ -99,10 +135,17 @@
 
 /*------------------Große Laptops / Tablets------------------*/
 @media (max-width: 1520px) {
+    #about {
+        padding-bottom: 60px;
+    }
     .header-text h1 span::before {
         content: "\A";
         white-space: pre;
     }
+    .text-image img{
+        max-width: 100px;
+    }
+
 }
 
 /*------------------Tablets / Mobile------------------*/
@@ -111,8 +154,38 @@
         scroll-margin-top: 112px;
     }
 
-    .text-image {
+    .profile-wrapper {
+        display: flex;
         flex-direction: column;
+        align-items: center;  /* horizontal zentriert */
+        justify-content: center; /* vertikal zentriert innerhalb des Wrappers */
+        gap: 20px;
+        width: 100%;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Inhalte im Steckbrief zentriert */
+        padding-left: 0;       /* entfernt das feste Padding */
+        gap: 20px;
+    }
+
+    .entry {
+        text-align: center;    /* Text zentriert */
+        gap: 15px;             /* Abstand zwischen Icon und Text */
+        flex-wrap: wrap;       /* sorgt dafür, dass lange Texte umbrechen */
+    }
+
+    .entry i {
+        width: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .text-image,
+    .text-image.right {
+        flex-direction: column !important;
         align-items: center;
         text-align: center;
         gap: 20px;
@@ -122,10 +195,9 @@
         max-width: 100px;
     }
 
-    .text-image:nth-child(1) img,
-    .text-image:nth-child(2) img,
-    .text-image:nth-child(3) img {
-        order: -1;
+    .text-content {
+        text-align: center;
+        max-width: 100%;
     }
 
     .about-me {
