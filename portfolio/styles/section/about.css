@@ -157,8 +157,8 @@
     .profile-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;  /* horizontal zentriert */
-        justify-content: center; /* vertikal zentriert innerhalb des Wrappers */
+        align-items: center;
+        justify-content: center;
         gap: 20px;
         width: 100%;
     }
@@ -166,15 +166,15 @@
     .profile {
         display: flex;
         flex-direction: column;
-        align-items: center;  /* Inhalte im Steckbrief zentriert */
-        padding-left: 0;       /* entfernt das feste Padding */
+        align-items: center;
+        padding-left: 0;
         gap: 20px;
     }
 
     .entry {
-        text-align: center;    /* Text zentriert */
-        gap: 15px;             /* Abstand zwischen Icon und Text */
-        flex-wrap: wrap;       /* sorgt dafür, dass lange Texte umbrechen */
+        text-align: center;
+        gap: 15px;
+        flex-wrap: wrap;
     }
 
     .entry i {
@@ -185,7 +185,7 @@
 
     .text-image,
     .text-image.right {
-        flex-direction: column !important;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 20px;
@@ -207,7 +207,8 @@
 }
 
 /*------------------Kleine Smartphones------------------*/
-@media (max-width: 480px) {
+@media (max-width: 780px) {
+
     .text-image img {
         max-width: 80px;
     }
@@ -215,5 +216,29 @@
     .about-me {
         font-size: 14px;
         gap: 20px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .entry {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .entry i {
+        width: auto;
+        text-align: center;
+        font-size: 25px;
+        color: var(--eyeCatchColor);
     }
 }
